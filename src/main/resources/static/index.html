@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matte Admin</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>🎯 Matte Admin</h1>
+            <ul id="entityList">
+                <!-- Entity list will be populated dynamically -->
+            </ul>
+        </div>
+        <div class="main">
+            <div class="header">
+                <h2 id="pageTitle">Select an entity</h2>
+                <button class="btn btn-primary" id="createBtn" style="display:none;">+ Create New</button>
+            </div>
+            <div id="content"></div>
+        </div>
+    </div>
+
+    <!-- Modal for Create/Edit -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Create Item</h3>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <form id="entityForm">
+                <div id="formFields"></div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
