@@ -1,0 +1,23 @@
+# Maven
+target/
+.mvn/
+mvnw
+mvnw.cmd
+
+# JBang
+.jbang/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled
+*.class

@@ -1,6 +1,7 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-//SOURCES Matte.java
+//DEPS io.matte:matte-framework:1.0.0
 
+import io.matte.*;
 import java.io.IOException;
 
 // Application-specific entities
@@ -44,7 +45,7 @@ class Product extends Entity {
 //
 // Then just add: app.register("orders", () -> new Order());
 
-public class Example {
+public class ExampleApp {
   public static void main(String[] args) throws IOException {
     // Create the app and register entities
     Matte app = new Matte(8080)
